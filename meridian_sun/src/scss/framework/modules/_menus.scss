@@ -1,0 +1,88 @@
+/*
+  ./scss/framework/modules/_menus.scss
+   Module des menus
+*/
+
+/* Menu-bandeau */
+
+/* bandeau */
+.menu-bandeau {
+  background: #b05a5a;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+  width: calc(100% + 2em + 40px);
+  position: relative;
+  left: calc(-1em - 20px);
+}
+/* replis du bandeau paramètres communs */
+.menu-bandeau:before, .menu-bandeau:after {
+  content:'';
+  display: block;
+  background: #803e3e;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: -10px;
+  z-index: -1;
+}
+/* replis du bandeau coté gauche */
+.menu-bandeau:before {
+  left: 0;
+  transform: skewY(45deg);
+}
+/* replis du bandeau coté droite */
+.menu-bandeau:after {
+  right: 0;
+  transform: skewY(-45deg);
+}
+
+/* alignement des items du menu dans le bandeau */
+nav {
+  padding: 10px;
+}
+
+nav > ul {
+  border-color: #803e3e;
+  border-style: dashed none;
+  margin: 0;
+  width: calc(100% + 1em);
+  position: relative;
+  left: calc(-.2em - 5px);
+}
+
+nav > ul > li {
+  list-style: none;
+  display: inline-block;
+  align-items: center;
+  padding: 0;
+  width: auto;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  font-family: 'Market_Deco', serif;
+  padding: 1em;
+  color: #fff;
+}
+
+/* Sous-menu */
+
+.sous-menu > ul > li {
+  list-style: none;
+  display: inline-block;
+  align-items: center;
+  padding: 0;
+  width: auto;
+}
+
+.sous-menu > ul > li > a {
+  text-decoration: none;
+  padding: 1em;
+  color: #6b6b6b;
+  font-size: .8em;
+}
+
+.sous-menu > ul > li > a.active {
+  color: #803e3e;
+}

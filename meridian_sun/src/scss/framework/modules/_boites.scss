@@ -1,0 +1,39 @@
+/*
+  ./scss/framework/modules/_boites.scss
+   Module des boites
+*/
+* {
+  box-sizing: border-box;
+}
+
+/* boite du main */
+
+.conteneur {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  padding: 1em;
+  background: #fff;
+}
+
+/* boite de l'image de l'about */
+
+
+
+/* boite du footer */
+
+.footer-conteneur-haut > div {
+  display: inline-block;
+  width: 20%;
+  align-items: center;
+}
+
+.footer-conteneur-haut > div > ul > li > a {
+    text-decoration: none;
+    color: #999;
+}
+.footer-conteneur-bas {
+  background: black;
+  display: flex;
+  text-align: center;
+}

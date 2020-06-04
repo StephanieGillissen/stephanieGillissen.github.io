@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bandeau</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      color: #6b6b6b;
+      background: #2e2e2e;
+      font-size: 1.2em;
+    }
+    nav {
+      padding: 10px;
+    }
+    nav > ul {
+      border-color: #803e3e;
+      border-bottom-style: dashed;
+      border-top-style: dashed;
+      margin: 0;
+      width: calc(100% + 1em);
+      position: relative;
+      left: calc(-.2em - 5px);
+    }
+    nav > ul > li {
+      list-style: none;
+      display: inline-block;
+      align-items: center;
+      padding: 0;
+      width: auto;
+    }
+    nav > ul > li > a {
+      text-decoration: none;
+      padding: 1em;
+      color: #fff;
+    }
+    .conteneur {
+      width: 100%;
+      max-width: 900px;
+      margin: auto;
+      padding: 1em;
+      background: #fff;
+    }
+    #bandeau {
+      background: #b05a5a;
+      color: #fff;
+      line-height: 50px;
+      text-align: center;
+      width: calc(100% + 2em + 40px);
+      position: relative;
+      left: calc(-1em - 20px);
+    }
+    #bandeau:before, #bandeau:after {
+      content:'';
+      display: block;
+      background: #803e3e;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      bottom: -10px;
+      z-index: -1;
+    }
+    #bandeau:before {
+      left: 0;
+      transform: skewY(45deg);
+    }
+    #bandeau:after {
+      right: 0;
+      transform: skewY(-45deg);
+    }
+    #logo {
+      font-family: 'Kaushan Script', cursive;
+      color: #6b6b6b;
+    }
+
+
+  </style>
+</head>
+<body>
+  <section class="conteneur">
+    <h1>Méridian Sun</h1>
+    <nav id="bandeau">
+        <ul>
+          <li class="">
+            <a href="index.html">Blog</a>
+          </li>
+          <li class="">
+            <a href="about.html">About</a>
+          </li>
+          <li class="">
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+    </nav>
+    <div>
+      <p>Hello! Welcome to my blog. I am The Meridian Sun. Here on this blog you will be
+        able to find my photography works as well as everything I like across the internet world.</p>
+    </div>
+    <div>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+
+    <!-- Page About -->
+    <section>
+      <hr/>
+      <!-- Contenu -->
+      <article>
+        <!-- titre 2 -->
+        <h2>About</h2>
+        <!-- photo -->
+            <img src="../documents/images/about.jpg" alt="photo">
+        <!-- texte 1 -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+               Fugiat dolore quas excepturi magnam aspernatur explicabo cumque accusamus
+               velit temporibus ducimus harum asperiores, nihil,
+               eum odit animi nesciunt! Perferendis, sed, non.
+            </p>
+            <br/>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+               minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+               ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+               voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+               sint occaecat cupidatat non proident,
+               sunt in culpa qui officia deserunt mollit anim id est laborum.
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+               consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+               non proident, sunt in culpa qui officia
+               deserunt mollit anim id est laborum.
+            </p>
+            <br/>
+        <!-- titre 3 -->
+         <h3>Phasellus consectetuer vestibulum</h3>
+        <!-- texte 2 -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+               Fugiat dolore quas excepturi magnam aspernatur explicabo cumque accusamus
+               velit temporibus ducimus harum asperiores, nihil,
+               eum odit animi nesciunt! Perferendis, sed, non. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+               minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+               ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+               voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+               sint occaecat cupidatat non proident,
+               sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <br/>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+               consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+               non proident, sunt in culpa qui officia
+               deserunt mollit anim id est laborum.
+            </p>
+      </article>
+      <hr/>
+    </section>
+
+    <!-- Pieds -->
+    <footer >
+      <!-- Barre de recherche -->
+      <div>
+        <h4>SEARCH</h4>
+        <form action="traitement.html" method="get">
+          <label for="recherche"></label>
+          <input type="texte" id="recherche" name="recherche" placeholder="Search">
+        </form>
+      </div>
+        <!-- Articles -->
+      <div>
+       <h4>RECENT POSTS</h4>
+        <ul>
+         <li><a href="#">A wonderful Complexy</a></li>
+         <li><a href="#">The Meridian Sun</a></li>
+         <li><a href="#">Gallery Format</a></li>
+         <li><a href="#">John Doe</a></li>
+         <li><a href="#">A Day In The Life</a></li>
+        </ul>
+      </div>
+          <!-- Lien TWITTER -->
+        <div>
+            <h4>TWITTER</h4>
+            <!-- Pointillé avec <hr id="div-dotted-lign"/> ou avec <div id="div-dotted-lign"></div> -->
+            <hr/>
+            <a href="Follow@iepsdesign">-> Follow@iepsdesign</a>
+        </div>
+          <!-- Les tags -->
+          <div>
+            <h4>TAGS</h4>
+            <div>
+              <p>blogroll <big class="bigger">daily</big> dialog gallery
+                <br />journal link motion music
+                <br /><big class="bigger">photo</big> <big class="big">professional</big>
+                <br />quotation show sound tv video</p>
+            </div>
+          </div>
+          <!-- Les archives -->
+          <div>
+            <h4>ARCHIVES</h4>
+            <ul>
+              <li><a href="#">May 2020</a></li>
+              <li><a href="#">April 2020</a></li>
+            </ul>
+          </div>
+          <!-- À propos -->
+          <div>
+            <h4>ABOUT</h4>
+            <p>I am alone, and feel the
+              charm of existence in this
+              spot, which was created for
+              the bliss of souls like mine.
+            </p>
+            <br/>
+            <p>I am so happy, my dear
+            friend, so absorbed in the
+            exquisite sense of mere
+            tranquil existence, that i
+            neglect my talents.
+            </p>
+          </div>
+        <!-- Copyright -->
+        <div>&copy; Copyright 2020 - The Meridian Sun</div>
+      </footer>
+
+  </section>
+</body>
+</html>

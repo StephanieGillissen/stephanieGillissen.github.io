@@ -1,0 +1,71 @@
+/*
+  ./scss/framework/modules/_contenus.scss
+   Module des contenus
+*/
+
+/* Icons */
+.icons > ul {
+  position: relative;
+  padding: 0;
+  width: auto;
+}
+
+.icons > ul > li {
+  list-style: none;
+  display: inline-block;
+  align-items: center;
+  padding: 0;
+  width: auto;
+}
+
+.icons > ul > li > a {
+  text-decoration: none;
+  padding: 0;
+  color: #fff;
+  width: auto;
+}
+
+
+
+/* Barre de recherche */
+.icone-loupe {
+  align-content: center;
+}
+
+/* Texte contournant l'image */
+
+
+/* Mise en page des iframe et img */
+
+.map-taille {
+  width: calc(100% + .9em + 21px);
+  position: relative;
+  left: calc(-.45em - 10px);
+  height: 350px;
+}
+.taille {
+
+}
+
+/* Mise en page du formulaire */
+.formulaire {
+  background-color: #999;
+}
+
+/* Bordures décoratives */
+
+.bordure-double {
+  border: 5px 0;
+  border-style: dotted none;
+}
+.bordure-simple {
+  border-bottom: 5px;
+  border-style: dotted;
+}
+
+/* Taille des vignettes */
+
+.vignette > img, .vignette > iframe {
+  max-width: 300px;
+  max-height: 200px;
+}

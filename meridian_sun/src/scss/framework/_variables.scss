@@ -1,0 +1,46 @@
+/*
+  ./scss/framework/_variables.scss
+  Variables du framework
+*/
+
+/* PALETTE DE COULEURS DE L'APPLICATION */
+
+  /* Couleur du texte et logo */
+$couleurPolice1: #6b6b6b;
+  /* Couleur des titres et du bandeau */
+$couleurPolice2: #b05a5a;
+$couleurPolice2Claire: lighten($couleurPolice2, 30%);
+  /* Couleur des rebords du bandeau et des pointillés */
+$couleurPolice2Foncee: darken($couleurPolice2, 30%);
+$couleurRemplacement: #693333;
+  /* Couleur police du footer */
+$couleurPolice3: #999;
+  /* Couleur de fond de la page */
+$couleurFond1: #2e2e2e;
+  /* Couleur de fond du footer */
+$couleurFond2: #191919;
+  /* Couleur du fond du formulaire */
+$couleurFondForm: lighten($couleurDivers, 90%);
+  /* Autre couleur */
+$couleurDivers: #a0a0a0;
+
+/* DIMENSIONS DES BOITES */
+
+
+
+/* TAILLE DES CONTENUS */
+
+
+
+/* DIMENSIONS DE LA GRILLE */
+
+$grillesGouttiere: .5em;
+$grillesColonnesNombre: 12;
+
+$grilleBreakPoints: ('xs': '0',
+                     's' : '576px',
+                     'm' : '768px',
+                     'l' : '992px',
+                     'xl': '1200px');
+
+/* MENUS */

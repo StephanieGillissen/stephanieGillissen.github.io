@@ -1,0 +1,37 @@
+/*
+  ./scss/framework/modules/_variables.scss
+  Variables du framework
+*/
+
+/* Typographies */
+
+@font-face {
+	font-family: 'Kaushan Script', cursive;
+	src: url("../fonts/web_fonts/kaushanscript-regular-webfont.woff2") format("woff2"),
+			 url("../fonts/web_fonts/kaushanscript-regular-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Merriweather', serif;
+	src: url("../fonts/web_fonts/merriweather-regular-webfont.woff2") format("woff2"),
+			 url("../fonts/web_fonts/merriweather-regular-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*@font-face {
+	font-family: 'Market_Deco';
+	src: url("../fonts/market_deco-webfont.woff2") format("woff2"),
+			 url("../fonts/market_deco-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}*/
+
+@font-face {
+    font-family: 'Market Deco';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Market Deco'), url("../fonts/web_fonts/Market_Deco.woff") format("woff");
+}

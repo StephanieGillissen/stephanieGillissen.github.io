@@ -1,0 +1,77 @@
+//
+// ./scss/app.scss
+//
+
+/* ---------------------------------------
+  SPECIFICATIONS GENERALES (valeurs par défaut)
+  ------------------------------------------
+*/
+
+
+/* Fond et couleur du body */
+body {
+  color: #6b6b6b;
+  background: #2e2e2e;
+  background: url("../documents/images/bg1.jpg") cover;
+  font-size: 1.2em;
+}
+
+/* Police et couleur du texte */
+main {
+  font-family: 'Merriweather', serif;
+  color: #6b6b6b;
+}
+
+/* Police et couleur des titres */
+h2, h3, h4 {
+  font-family: 'Market Deco';
+  color: #b05a5a;
+  text-transform: uppercase;
+}
+
+ footer {
+   background: #191919;
+   color: #999;
+   font-size: .8em;
+   width: calc(100% + .9em + 21px);
+   position: relative;
+   left: calc(-.45em - 10px);
+ }
+
+
+
+
+/* ---------------------------------------
+  OBJETS PARTICULIERS (identifiés par un id)
+  ------------------------------------------
+*/
+
+#logo {
+  font-family: 'Kaushan Script', cursive;
+  color: #6b6b6b;
+}
+
+/* icone loupe du bouton recherche */
+#loupe {
+  background: #2e2e2e;
+  color: #fff;
+}
+
+ /* taille de barre de recherche */
+#recherche {
+  width: auto;
+}
+
+ /* Boutons (sauf celui de recherche) */
+#bouton {
+  background: linear-gradient(to bottom, #6b6b6b, #191919);
+  color: #fff;
+  border-radius: 5px;
+}
+
+#bouton2 {
+  background: linear-gradient(to bottom, #6b6b6b, #191919);
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 15px;
+}

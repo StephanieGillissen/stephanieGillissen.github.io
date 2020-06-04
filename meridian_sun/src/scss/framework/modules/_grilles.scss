@@ -1,0 +1,27 @@
+/*
+  ./scss/framework/modules/_grilles.scss
+   Module des contenus
+*/
+* {
+  box-sizing: border-box;
+}
+
+.grille-g {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grille-g > * {
+  margin: $grillesGouttiere;
+  flex-basis: calc(100% - (2 * $grillesGouttiere));
+}
+
+@each $etiquette, $dimension in $grilleBreakPoints {
+  @media screen and (min-width: #{$dimension}) {
+    @for $i from 1 through $grillesColonnesNombre {
+      .#{$etiquette}#{$i} {
+          flex-basis: calc((#{$i} * 100% / #{$grillesColonnesNombre}) - (2 * #{$grillesGouttiere}));
+      }
+    }
+  }
+}
